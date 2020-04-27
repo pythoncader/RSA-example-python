@@ -117,7 +117,7 @@ print("Modular multiplicative inverse is",
   
 # This code is contributed by Nikita tiwari. '''
 
-encodeordecode = str(input('Do you want to encode or decode?'))
+encodeordecode = str(input('Do you want to encode or decode? '))
 if 'decode' in encodeordecode:
     p = int(input('Please enter your value for p: '))
 
@@ -172,7 +172,7 @@ if 'decode' in encodeordecode:
     decodedmessage = ''
     for i in myasciilist:
         decodedmessage += chr(i)
-    print('Here is your message:', decodedmessage)
+    print('\n\nHere is your message:', decodedmessage)
 
 
 elif 'encode' in encodeordecode:
@@ -200,7 +200,7 @@ elif 'encode' in encodeordecode:
 
     ciphertext = ", ".join(myencodedliststrings)
     print(ciphertext)
-    yesorno = str(input('Copy to clipboard? y/n  '))
+    yesorno = str(input('\nCopy to clipboard? y/n  '))
     if yesorno == 'y':
         pyperclip.copy(ciphertext)
         print('The ciphertext has been copied to the clipboard')
