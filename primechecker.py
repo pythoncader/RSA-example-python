@@ -1,5 +1,4 @@
-mynumber = 325320154874658961686746563858984315798117
-mynumber = int(input())
+mynumber = int(input('What number do you want to check? '))
 def isprime(number) :
     ifprimelist = []
     if (number <= 1) : #if the number is negative, zero, or 1, it is not prime

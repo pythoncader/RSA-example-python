@@ -1,6 +1,6 @@
 import keyboard
 import msvcrt
-
+import sys
 def primechecker(number) :
     ifprimelist = []
     if (number <= 1) : #if the number is negative, zero, or 1, it is not prime
@@ -55,7 +55,7 @@ while True:
         key_stroke = msvcrt.getch()
         if ord(key_stroke) == 27:
             print('Escaping...')
-            break
+            sys.exit()
         elif ord(key_stroke) == 32:
             if len(mynumbers) < 2:
                 mynumbers.append(primelist[-1])
